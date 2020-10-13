@@ -103,6 +103,9 @@ func contextSchema() *schema.Schema {
 		Type:        schema.TypeMap,
 		Optional:    true,
 		Description: "Context variables",
+		Elem: &schema.Schema{
+			Type: schema.TypeString,
+		},
 	}
 }
 
